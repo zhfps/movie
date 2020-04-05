@@ -2,3 +2,6 @@
   display: flex;
   flex-direction: row;
 }
+.desc-class{
+  color: red;
+}

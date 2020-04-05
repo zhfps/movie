@@ -1,3 +1,6 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "movie-item": "/components/movie-item/index",
+    "van-search": "/miniprogram_npm/vant-weapp/search/index"
+  }
 }

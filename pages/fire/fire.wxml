@@ -1,2 +1,25 @@
-<!--pages/fire/fire.wxml-->
-<text>pages/fire/fire.wxml</text>
+<view>
+  <view class="header">
+    <van-search
+      value="{{value}}"
+      shape="round"
+      placeholder="请输入电影名"
+      input-align="center"
+      bind:search="onSearch"
+      />
+  </view>
+  <view class="body">
+    <movie-item
+    wx:for="{{movieList}}"
+    wx:key="id"
+    id="{{item.id}}"
+    image="{{item.images.small}}"
+    rate='{{item.rating.average}}'
+    casts="{{item.casts[0].name}}"
+    title="{{item.title}}"
+    year='{{item.year}}'
+    directors="{{item.directors.name}}"
+    bind:getDetail="getDetail"
+    class="flex-item" />
+  </view>
+</view>

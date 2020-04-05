@@ -1,12 +1,15 @@
 <view class="container" bindtap="getDetail">
       <van-card
         title="{{title}}"
-        desc="{{directors}}"
+        desc="{{year}}"
         thumb="{{image}}"
       >
-      <div slot="tags">
-          <text>{{casts}}</text>
-          <div class="rate-it">
+      <view slot="tags">
+          <text>导演：{{directors}}</text>
+      </view>
+      <view slot="bottom">
+         主演：{{casts}}
+         <div class="rate-it">
             <van-rate
               value="{{rate}}"
               allow-half
@@ -15,8 +18,8 @@
               size="12"
               count="10"
             />
-            <text>9.1</text>
+            <text>{{rate}}</text>
           </div>
-      </div>
+      </view> 
       </van-card>
  </view>
