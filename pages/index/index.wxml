@@ -1,0 +1,20 @@
+<view>
+  <view class="header">
+    <van-search
+      value="{{value}}"
+      shape="round"
+      placeholder="请输入电影名"
+      input-align="center"
+      bind:search="onSearch"
+      />
+  </view>
+  <view class="body">
+    <movie-item bind:getDetail="getDetail"  class="flex-item" />
+     <movie-item class="flex-item" />
+      <movie-item class="flex-item" />
+       <movie-item class="flex-item" />
+        <movie-item class="flex-item" />
+         <movie-item class="flex-item" />
+  </view>
+  <view class="footer"></view>
+</view>

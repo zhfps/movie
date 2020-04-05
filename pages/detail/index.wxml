@@ -1,0 +1,10 @@
+<view>
+  <view class="body">
+   <van-card
+      desc="描述信息"
+      title="商品标题"
+      thumb="https://img9.doubanio.com\/view\/celebrity\/s_ratio_celebrity\/public\/p17525.jpg"
+    />
+  </view>
+  <view class="footer"></view>
+</view>

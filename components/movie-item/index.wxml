@@ -1,0 +1,22 @@
+<view class="container" bindtap="getDetail">
+      <van-card
+        title="{{title}}"
+        desc="{{directors}}"
+        thumb="{{image}}"
+      >
+      <div slot="tags">
+          <text>{{casts}}</text>
+          <div class="rate-it">
+            <van-rate
+              value="{{rate}}"
+              allow-half
+              void-icon="star"
+              void-color="#eee"
+              size="12"
+              count="10"
+            />
+            <text>9.1</text>
+          </div>
+      </div>
+      </van-card>
+ </view>

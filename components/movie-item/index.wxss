@@ -1,0 +1,4 @@
+.rate-it{
+  display: flex;
+  flex-direction: row;
+}
